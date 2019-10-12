@@ -1,0 +1,449 @@
+<DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+
+	<head> <!-- titulo -->	
+		<title>Zolita</title>
+	</head>
+
+		<link rel="stylesheet" type="text/css" href="style.css"> <!-- acá empieza el estilo css-->
+
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Righteous&display=swap" rel="stylesheet">
+		<style type="text/css">
+
+		h1  {
+			font-style: regular; 
+			font-family: 'Montserrat', sans-serif;
+			color:#FFFFFF;
+			text-align: center;
+			font-size: 62px;
+			letter-spacing: 13px;
+		}
+	
+		h2  {
+			font-style: regular; 
+			font-family: 'Montserrat', sans-serif;
+			color:#FFFFFF;
+			text-align: center;
+			font-size: 32px;
+			letter-spacing: 12px;
+		}
+	
+		h3  {
+			font-style: regular; 
+			font-family: 'Montserrat', sans-serif;
+			color:#D50963;
+			text-align: center;
+			font-size: 14px;
+			letter-spacing: 12px;
+			}
+
+		body {
+			width: 90%;
+			height: 100%;
+			background-color: #FFC4D0;
+
+			}
+
+		#menu {
+			word-spacing: 28px;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16;
+  		 }
+
+		a {
+    		color:  #FFFFFF; 
+		}
+		a:hover {
+    		color:  #D50963; 
+		}
+		a:active {
+    		color:  #FFFFFF; 
+		}
+		div {
+		color:#FFFFFF;
+		margin-left: 90px;
+
+		}
+	
+		#historia {
+		box-sizing: content-box;
+		background: linear-gradient(to top, #0000, #FFFFFF); /*gradiente */
+	 	font-family: 'Montserrat', sans-serif;
+		font-size: 16;
+		color: #D50963
+   		}
+   		#discos {
+   		box-sizing: content-box;
+		background-color: #FFE9F3;
+	 	font-family: 'Montserrat', sans-serif;
+		font-size: 16;
+		color: #D50963
+   }
+  	 	
+    	#menu {
+   	    position: sticky;
+   	    margin: auto;
+   	    width: 500PX;
+		top:40px;
+		border:none;
+		display:inline-block;  
+		background-color: #FFC4D0
+		text-decoration: none;
+}
+
+ /*estilo del menu*/	
+
+	ul, ol {
+				list-style:none;
+				margin: 0% 10%;
+				
+			}
+			
+			.nav {
+				width:2200px; 
+				height: 30px;
+				word-spacing: 22px;
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#FFC4D0;
+				color:#fff;
+				padding: 10px 12px;
+				display: block;
+				margin: 100%
+				height: 30px;
+				width: 160px;			}
+			
+			.nav li a:hover {
+				background-color:#FFC4D0;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+
+			}
+			.subnav {
+				float: left;
+				margin: 0px;
+				position: absolute;
+				left: 0px;
+			}
+			.subnav:hover .subnav-content-vertical:hover{
+				display:block;
+			}
+
+			.contenedor {
+   	    display: flex;
+   	    }
+
+   	    .box1 {
+ 		flex: 1;
+ 		   	    }
+
+ 		   ul#subnav li a{
+        position: relative ;
+        color:#FFF;
+        overflow:hidden;
+        text-decoration: none;
+    }
+    ul#subnav li a:before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #FFF;
+        color: #0F7C67;
+        content: attr(title);
+        transition: transform 0.3s ease 0s;
+    }
+    ul#subnav li a span{
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #B02246;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+     ul#subnav li a:hover span{
+        transform: rotate3d(1,0,0,360deg);(100%);
+    }
+
+     		   ul#subnav1 li a{
+        position: relative;
+        color:#FFF;
+        overflow:hidden;
+        text-decoration: none;
+    }
+    ul#subnav1 li a:before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #fff;
+        color: #B02246;
+        content: attr(title);
+        transition: transform 0.3s ease 0s;
+    }
+    ul#subnav1 li a span{
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #B02246;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+
+    ul#subnav1 li a:hover span{
+        transform: rotate3d(1,0,0,360deg);(100%);
+    
+    }
+     		   ul#subnav2 li a{
+        position: relative;
+        color:#FFF;
+        overflow:hidden;
+    }
+    ul#subnav2 li a:before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #fff;
+        color: #B02246;
+        content: attr(title);
+        transition: transform 0.3s ease 0s;
+    }
+    ul#subnav2 li a span{
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #B02246;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+
+    ul#subnav2 li a:hover span{
+        transform: rotate3d(1,0,0,360deg);(100%);
+    }
+    	#menu 
+    	a:hover {
+        background-color: #B02246;
+        transform: scale(1,1.4); /*agrandar*/
+        transition:  background-color 0.3s, transform 1s; 
+
+
+
+    }
+
+    #menu
+    	a:active {
+        background-color: #9B7C83;
+        color: #7D001C;
+        
+    }
+
+   .flex-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; 
+
+ 
+}
+
+.flex-item {
+  background: white;
+  padding: 15px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 190px;
+  
+  line-height: 150px;
+  color: 
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#titulos
+    	 {
+        background-color: white;
+        color: #7D001C;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+
+	</style>
+	<body>
+	<header id="inicio"> <h1> <b> Z|O|L|I|T|A  </b>  </header>
+
+<div id="menu">
+			<nav> 
+				<ul class="nav">	
+					<li><a href="#inicio"> <span>I|N|I|C|I|O </span></a></li>
+					<li><a href="#discos"> <span> D|I|S|C|O|G|R|A|F|I|A </span></a>
+						<ul id="subnav">
+							<li><a href="#disco0"> <span> Immaculate Conception </span> </a></li>
+							<li><a href="#disco1"> <span>  Explosion </span></a></li>
+							<li><a href="#disco2"> <span>  Truth Tea </span></a></li>
+							<li><a href="#disco3"> <span>  Shut Up and Cry </span></a>
+							<li><a href="#disco4"> <span>  Black Magic </span></a>
+							<li><a href="#disco5"> <span>  Come Home With Me  </span></a>
+							</li>	
+						</ul >
+					</li>
+					<li><a href="#GALERIA">G|A|L|E|R|I|A</a>
+					</li>
+					<li><a href="#TOUR">T|O|U|R</a></li>
+					<li><a href="#RRSS">R|R|S|S</a>
+						<ul id="subnav1">
+							<li><a href="https://www.facebook.com/zolitamusic/"> <span> Facebook </span></a></li>
+							<li><a href="https://www.instagram.com/zolita/"> <span> Instagram </span></a></li>
+							<li><a href="https://twitter.com/zolitaofficial"> <span> Twitter </span> </a></li>
+							<li><a href="https://www.youtube.com/user/zolitamusic"> <span> Youtube </span></a></li>
+						</ul>
+					</li>
+					<li><a href="#zolita"> <span> Z|O|L|I|T|A </span></a>
+						<ul id="subnav2">
+							<li><a href="https://en.wikipedia.org/wiki/Zolita"> <span> Wiki </span></a></li>
+						</ul>
+					</li>
+						
+				</ul>
+			</nav>
+		</div>
+<img id="" src="zolita0.jpg" width="1400" height="750" > 
+ <b> <h2 id="zolita"> Z|O|L|I|T|A  </h2> </b> 
+ <DIV id= "historia" >
+ 	
+ <br>
+ Zoë Montana Hoetzel (nacida el 23 de septiembre de 1994), conocida profesionalmente como Zolita , es una cantante y compositora alemana-estadounidense. Obtuvo éxito viral con el video musical de "Explosion", que tiene más de ocho millones de visitas en YouTube a partir de mayo de 2018. Después de su éxito, lanzó los videos musicales de los singles "Holy" (2016) y "Fight Like a Girl". "(2017) dirigida por ella misma. El 13 de octubre de 2015 lanzó de forma independiente su obra extendida debut Immaculate Conception , y el 18 de mayo de 2018 lanzó su segunda obra extendida Sappho . 
+<br>
+
+ <b> <h3> VIDA TEMPRANA Y CARRERA  </h3></b>
+
+ Zolita nació el 23 de septiembre de 1994 en Nueva York y se crió en Calabasas, California . Su padre es de ascendencia alemana, y su madre es de ascendencia danesa. Su padre la inspiró a comenzar a hacer música y ella creció tocando bluegrass y guitarra plana.
+
+Ella comenzó su carrera con el video musical de "explosión", que ganó el éxito viral , también fue incluido en la cartelera ' lista de '30 Love Songs lesbiana' s. Además lanzó el segundo video para el sencillo "Holy", el concepto está explorando temas de sexualidad femenina, espiritualidad y feminismo. El 13 de octubre de 2015 lanzó su obra extendida debut Immaculate Conception . En 2017 lanzó el primer sencillo de su segunda obra extendida Sappho titulada "Fight Like a Girl", que es una canción de protesta con temas feministas inspirados en la campaña presidencial de 2016 de Donald Trump .El 26 de octubre de 2017 lanzó "Come Home with Me" como el segundo sencillo, y el 4 de mayo de 2018 lanzó "New You" como el tercer sencillo de su segundo juego extendido Sappho que se lanzó el 18 de mayo de ese año.  El 5 de diciembre de 2018 lanzó "Truth Tea" junto con un video musical como el primer sencillo de su tercer juego extendido. 
+<br>
+ <b> <h3> VIDA PERSONAL  </h3></b>
+
+ Zolita es abiertamente lesbiana y se identifica a sí misma como feminista . Ella salió a una edad temprana. En una entrevista de 2017, expresó la suerte que tuvo al crecer en una familia liberal rodeada de amigos de mente abierta. En sus días de escuela, tenía miedo de hablar con sus amigas y les decía: "También me preocupaba que mis amigas ya no quisieran tener noches de chicas o pijamadas por temor a que me sintieran atraída por ellas. Entonces Decidí mantener en secreto mi nuevo misterio ". También se identifica a sí misma como una bruja, explica que en los videos de su canal de YouTube , pero también en sus videos musicales, se muestra la brujería.
+<br>
+<br>
+<br>
+</DIV>
+<br>
+<br>
+<br>
+ <b> <h2 id="disco"> D|I|S|C|O|G|R|A|F|I|A  </h2> </b> 
+
+<br>
+<BR>
+<br>
+<br>
+<div class="flex-container" id="container" style="display: inline-block;" id="discos" class="contenedor" > <strong>
+	<ul class="flex-container">
+	<div class="1">
+	<p id="titulos"> IMMACULATE CONCEPTION </p>
+	 <li class="flex-item"> <img id="disco0" src="disco0.jpg" width="300" height="300" > 
+	</div>
+	<div class="2">
+	<p id="titulos"> EXPLOSION </p>
+	 <li class="flex-item"> <img id="disco1" src="disco1.jpg" width="300" height="300" > 
+	</div></li>
+	<div class="3">
+	<p id="titulos"> TRUTH TEA </p>
+	 <li class="flex-item"> <img id="disco2" src="disco2.jpg" width="300" height="300" > 
+	</div></li>
+	<div class="4">
+	<p id="titulos"> SHUT UP AND CRY </p>
+	 <li class="flex-item"> <img id="disco3" src="disco3.jpg" width="300" height="300" > 
+	</div></li>	
+	<div>
+	<p id="titulos"> BLACK MAGIC </p>
+	 <li class="flex-item"> <img id="disco4" src="disco4.jpg" width="300" height="300" > 
+	</div></li>
+	<div>
+	<p id="titulos"> COME HOME WITH ME </p>
+	 <li class="flex-item"> <img id="disco5" src="disco5.jpg" width="300" height="300" > 
+	</div></li>
+	</ul>
+	</strong>
+</div>
+<br>
+<br>
+ <b> <h2 id="GALERIA"> G|A|L|E|R|I|A  </h2> </b> 
+<br>
+ <b> <h2 id="TOUR"> T|O|U|R  </h2> </b> 
+<br>
+<DIV>
+<img  id="TOUR" src="TOUR.jpg" width="1100" height="1700" align="center" > 
+</DIV>
+<BR>
+<b> <h2 id="RRSS"> R|E|D|E|S S|O|C|I|A|L|E|S  </h2> </b> 
+<div>
+	
+	<br>
+	<a href="https://www.instagram.com/zolita/"> <img id="instagram" src="ig.png" width="60" height="60"> </a>
+	</div>
+	<div>
+	
+	<br>
+	<a href="https://www.facebook.com/zolitamusic/"> <img id="instagram" src="fb.png" width="60" height="60"> </a>
+	</div>
+	<div>
+	
+	<br>
+	<a href="https://twitter.com/zolitaofficial"> <img id="instagram" src="tw.png" width="60" height="60"> </a>
+	</div>
+	<div>
+	
+	<br>
+	<a href="https://www.youtube.com/user/zolitamusic"> <img id="instagram" src="yt.png" width="60" height="60"> </a>
+	</div>
+<br>
+<BR>
+
+<!--insertar audio-->
+<audio id="musica" src="holy.mp3" controls="autoplay">
+	
+</audio>
+
+	</body>
+
+
+	<br>
+	<!--inicio de footer-->
+	<footer id="pie">  <address> 
+		<br>
+		<H4  > 
+    Z|O|L|I|T|A</H4> <br>
+
+ 
+  </address>
+   </footer>
+
+	</html>
+	</body>
+
+	
+	</html>
