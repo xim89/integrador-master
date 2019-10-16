@@ -1,8 +1,4 @@
 
-  <link rel="stylesheet" type="text/css" href="style.css"> <!-- acá empieza el estilo css-->
-
-		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Righteous&display=swap" rel="stylesheet">
-		<style type="text/css">
 
 		h1  {
 			font-style: regular; 
@@ -21,7 +17,7 @@
 			font-size: 32px;
 			letter-spacing: 12px;
 		}
-    
+     
 
 	
 		h3  {
@@ -39,6 +35,14 @@
 			background-color: #FFC4D0;
 
 			}
+      #inicio {
+      font-style: regular; 
+      font-family: 'Montserrat', sans-serif;
+      color:#D50963;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 12px;
+      }
 
 		#menu {
 			word-spacing: 28px;
@@ -86,6 +90,7 @@
 		background-color: #FFC4D0
 		text-decoration: none;
 }
+
 
  /*estilo del menu*/	
 
@@ -285,5 +290,6 @@
         font-family: 'Montserrat', sans-serif;
         
     }
+
 
 	</style>
